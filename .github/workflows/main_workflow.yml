@@ -10,10 +10,14 @@ jobs:
     steps:
       - name: CheckoutCode
         uses: actions/checkout@v2
+      - name: Checking Node version
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
       - name: LinterExecution
         uses: github/super-linter@v3
         env:
-          DEFAULT_BRANCH: nodejs_linter_job
+          DEFAULT_BRANCH: nodejs_nodeversions_job
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: /
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
