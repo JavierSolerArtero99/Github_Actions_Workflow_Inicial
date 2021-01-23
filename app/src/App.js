@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hola soy Javier Soler Artero
+          Hola soy Javier Soler Artero desplegando mi aplicacion desde SURGE
         </p>
         <a
           className="App-link"
