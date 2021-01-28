@@ -1,4 +1,4 @@
-name: react_app_deploy
+name: send_telegram_workflow
 on:
   push:
     branches:
@@ -16,4 +16,3 @@ jobs:
           token: ${{ secrets.telegram_token }}
           chat: ${{ secrets.telegram_chat }}
           message: "Workflow ejecutado correctamente tras el último commit. Saludos Javier Soler Artero"
-        run:
