@@ -13,6 +13,6 @@ jobs:
       - name: Sending message
         uses: ./.github/actions/telegram_action
         with:
-          token: ${{ secrets.telegram_token }}
-          chat: ${{ secrets.telegram_chat }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          chat: ${{ secrets.TELEGRAM_CHAT }}
           message: "Workflow ejecutado correctamente tras el último commit. Saludos Javier Soler Artero"
