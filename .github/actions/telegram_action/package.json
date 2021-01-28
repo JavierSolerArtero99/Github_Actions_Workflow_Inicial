@@ -1,0 +1,22 @@
+{
+  "name": "github_actions_workflow_inicial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierSolerArtero99/Github_Actions_Workflow_Inicial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierSolerArtero99/Github_Actions_Workflow_Inicial/issues"
+  },
+  "homepage": "https://github.com/JavierSolerArtero99/Github_Actions_Workflow_Inicial#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.51.0"
+  }
+}

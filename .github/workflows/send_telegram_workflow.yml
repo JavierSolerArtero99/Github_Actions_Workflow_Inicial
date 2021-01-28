@@ -1,0 +1,19 @@
+name: react_app_deploy
+on:
+  push:
+    branches:
+      - send_telegram_action
+jobs:
+  envio_mensaje:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Sending message
+        uses: ./.github/actions/telegram_action
+        with:
+          token: ${{ secrets.telegram_token }}
+          chat: ${{ secrets.telegram_chat }}
+          message: "Workflow ejecutado correctamente tras el último commit. Saludos Javier Soler Artero"
+        run:

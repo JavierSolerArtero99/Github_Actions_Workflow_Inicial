@@ -1,0 +1,21 @@
+name: "Send Telegram Message"
+description: "Telegram Action"
+
+inputs:
+  token: 
+    description: "Field description"
+    required: true
+  chat: 
+    description: "Field description"
+    required: true
+  message: 
+    description: "Field description"
+    required: true
+outputs:
+  message: 
+    value: "Workflow ejecutado correctamente tras el último commit. Saludos Javier Soler Artero"
+    description: "Respond message"
+
+runs:
+  using: "node12"
+  main: "dist/index.js" 
