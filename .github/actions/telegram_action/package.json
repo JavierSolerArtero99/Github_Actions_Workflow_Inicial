@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JavierSolerArtero99/Github_Actions_Workflow_Inicial#readme",
   "dependencies": {
+    "@actions/core": "^1.2.6",
     "node-telegram-bot-api": "^0.51.0"
   }
 }
