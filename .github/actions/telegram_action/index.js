@@ -4,6 +4,12 @@ const core = require("@actions/core");
 const token = core.getInput("token");
 const bot = new TelegramBot(token, { polling: true });
 
-bot.sendMessage(core.getInput("chat"), core.getInput("message"));
+try {
+    bot.sendMessage(core.getInput("chat"), core.getInput("message"));
+} catch (error) {
+    console.log("No se ha podido enviar el mensaje");
+    console.log(error)
+    core.setFailed(error.message);
+}
 
-console.log("Mensaje enviado");
+core.setOutput("response", "Mensaje enviado");

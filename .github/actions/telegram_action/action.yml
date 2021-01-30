@@ -12,8 +12,7 @@ inputs:
     description: "Field description"
     required: true
 outputs:
-  message: 
-    value: "Workflow ejecutado correctamente tras el último commit. Saludos Javier Soler Artero"
+  response: 
     description: "Respond message"
 
 runs:
