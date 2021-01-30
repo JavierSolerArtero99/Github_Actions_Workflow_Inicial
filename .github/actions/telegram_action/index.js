@@ -7,9 +7,9 @@ const bot = new TelegramBot(token, { polling: true });
 try {
   bot.sendMessage(core.getInput("chat"), core.getInput("message"));
 } catch (error) {
-  console.log("No se ha podido enviar el mensaje");
-  console.log(error);
   core.setFailed(error.message);
 }
 
-core.setOutput("response", "Mensaje enviado");
+console.log("Mensaje enviado");
+
+// core.setOutput("response", "Mensaje enviado");
