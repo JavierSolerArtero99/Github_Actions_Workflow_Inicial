@@ -201,7 +201,7 @@ const TelegramBot = __nccwpck_require__(6811);
 const core = __nccwpck_require__(6066);
 
 const token = core.getInput("token");
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(token, { polling: false });
 
 try {
   bot.sendMessage(core.getInput("chat"), core.getInput("message"));
@@ -210,9 +210,6 @@ try {
 }
 
 console.log("Mensaje enviado");
-
-// core.setOutput("response", "Mensaje enviado");
-
 
 /***/ }),
 
