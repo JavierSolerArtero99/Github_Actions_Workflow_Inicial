@@ -201,6 +201,7 @@ const TelegramBot = __nccwpck_require__(6811);
 const core = __nccwpck_require__(6066);
 const github = __nccwpck_require__(8608);
 
+const git = github.context.payload; 
 const token = core.getInput("token");
 const bot = new TelegramBot(token, { polling: false });
 
