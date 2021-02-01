@@ -8,8 +8,7 @@ const bot = new TelegramBot(token, { polling: false });
 try {
   bot.sendMessage(
     core.getInput("chat"),
-    `${core.getInput("message")}
-      GitHub Information:
+    `GitHub Information:
       - Commit name: ${git.head_commit.author.name}
       - Commit message: ${git.head_commit.message}
       - Username: ${git.head_commit.author.username}
