@@ -6,8 +6,8 @@ const token = core.getInput("token");
 const bot = new TelegramBot(token, { polling: false });
 
 try {
-  let message = core.getInput("message");
-  message += `\n
+  let message = 
+  `${core.getInput("message")}\n
   GitHub Information:\n
   - Commit name: ${git.head_commit.author.name}\n
   - Commit message: ${git.head_commit.message}\n
